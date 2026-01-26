@@ -1,5 +1,5 @@
 {
-  "pipelineRunAt": "2026-01-26T19:35:56.206Z",
+  "pipelineRunAt": "2026-01-26T19:49:57.277Z",
   "steps": {
     "step1_ingestion": {
       "name": "Real Public-Source Ingestion (Non-Simulated)",
@@ -44,14 +44,14 @@
     "totalEvaluated": 41,
     "statusBreakdown": [
       {
-        "status": "PASS",
-        "count": 18
+        "status": "FAIL",
+        "count": 28
       },
       {
-        "status": "FAIL",
-        "count": 23
+        "status": "PASS",
+        "count": 13
       }
     ],
-    "passRate": "43.90%"
+    "passRate": "31.71%"
   }
 }
