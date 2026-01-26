@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/personal_workspace/realestateandlease/app/page.tsx"],"sourcesContent":["\"use client\"\n\nimport { redirect } from \"next/navigation\"\nimport { useEffect } from \"react\"\n\nexport default function RootPage() {\n  useEffect(() => {\n    const token = localStorage.getItem(\"token\")\n    \n    if (!token) {\n      redirect(\"/login\")\n    } else {\n      redirect(\"/dashboard\")\n    }\n  }, [])\n\n  return null\n}"],"names":[],"mappings":";;;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACtB,IAAA,gMAAS;8BAAC;YACR,MAAM,QAAQ,aAAa,OAAO,CAAC;YAEnC,IAAI,CAAC,OAAO;gBACV,IAAA,uKAAQ,EAAC;YACX,OAAO;gBACL,IAAA,uKAAQ,EAAC;YACX;QACF;6BAAG,EAAE;IAEL,OAAO;AACT;GAZwB;KAAA"}}]
+}

@@ -1,27 +1,26 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Ignore dependencies
 /node_modules
 
-# next.js
-/.next/
+# Ignore output folders except build
+/.next/ !/.next/
+
+# Ignore production out folder if not needed
 /out/
 
-# production
-/build
-
-# debug
+# Ignore debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# Ignore env files
 .env*
 
-# vercel
+# Ignore Vercel configs
 .vercel
 
-# typescript
+# Ignore TypeScript build info
 *.tsbuildinfo
-next-env.d.ts
+
+# Track build folder
+!/build

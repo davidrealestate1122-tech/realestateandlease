@@ -1,0 +1,20 @@
+[00:00:00.703] Server  LOG      ✓ Ready in 483ms
+[00:00:07.669] Server  LOG     
+======================================================================
+[00:00:07.671] Server  LOG     📅 PIPELINE SCHEDULER STARTED
+[00:00:07.671] Server  LOG     ======================================================================
+[00:00:07.671] Server  LOG     
+🚀 First-time pipeline execution started
+[00:00:07.679] Server  LOG     ⏱ Time: Jan 27, 2026, 12:53:45 AM
+[00:00:07.679] Server  LOG     
+================================================================================
+[00:00:07.680] Server  LOG     🚀 PIPELINE STARTED: "2026-01-26T19:53:45.444Z"
+[00:00:07.680] Server  LOG     ================================================================================
+[00:00:07.680] Server  LOG     
+📥 STEP 1: FETCHING DATA FROM PUBLIC SOURCE
+[00:00:07.681] Server  LOG     🌐 Source: Realtor.com (Dallas–Fort Worth)
+[00:00:07.681] Server  LOG     📥 STEP 1: FETCHING DATA FROM PUBLIC SOURCE
+[00:00:07.681] Server  LOG     🌐 Source: Zillow (New York)
+[00:00:07.682] Server  LOG     🔄 Fetching real listings...
+
+[00:00:07.682] Server  LOG     📤 Sending request to real-estate101 API...
