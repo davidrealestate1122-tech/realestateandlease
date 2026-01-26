@@ -23,14 +23,62 @@ export type RawPublicListing = {
 }
 
 /**
- * ✅ FIXED VERSION - With timeout, no fallback data
+ * ✅ FIXED FOR VERCEL - Works on both local and Vercel
  * 
- * Changes:
- * 1. Added explicit timeout (20 seconds)
- * 2. Better error handling
- * 3. Returns empty array on error (no fallback)
- * 4. No hanging requests
+ * Changes for Vercel compatibility:
+ * 1. Added custom headers (User-Agent, Connection, etc)
+ * 2. Added retry logic (3 attempts)
+ * 3. Better timeout handling
+ * 4. Axios instance configuration
  */
+
+// ✅ Create axios instance with Vercel-friendly config
+const axiosInstance = axios.create({
+  timeout: 20000,
+  headers: {
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Cache-Control": "max-age=0",
+  },
+})
+
+// ✅ Retry logic
+async function fetchWithRetry(
+  url: string,
+  config: any,
+  maxRetries: number = 3
+): Promise<any> {
+  let lastError: any
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`📡 Attempt ${attempt}/${maxRetries}...`)
+      const response = await axiosInstance.request({
+        url,
+        ...config,
+      })
+      console.log(`✅ Success on attempt ${attempt}`)
+      return response
+    } catch (error: any) {
+      lastError = error
+      console.log(`⚠️  Attempt ${attempt} failed: ${error.message}`)
+
+      if (attempt < maxRetries) {
+        const delayMs = 2000 * attempt // 2s, 4s, 6s between retries
+        console.log(`⏳ Waiting ${delayMs}ms before retry...`)
+        await new Promise((r) => setTimeout(r, delayMs))
+      }
+    }
+  }
+
+  throw lastError
+}
+
 export async function fetchFromPublicSource(): Promise<RawPublicListing[]> {
   console.log("📥 STEP 1: FETCHING DATA FROM PUBLIC SOURCE")
   console.log("🌐 Source: Zillow (New York)")
@@ -52,24 +100,24 @@ export async function fetchFromPublicSource(): Promise<RawPublicListing[]> {
     const nyUrl =
       "https://www.zillow.com/new-york-ny/?searchQueryState=%7B%22isMapVisible%22%3Atrue%2C%22mapBounds%22%3A%7B%22north%22%3A40.99288801644816%2C%22south%22%3A40.4015026337193%2C%22east%22%3A-73.4399776308594%2C%22west%22%3A-74.51938436914065%7D%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%7D%2C%22isListVisible%22%3Atrue%2C%22usersSearchTerm%22%3A%22New%20York%2C%20NY%22%7D"
 
-    console.log("📤 Sending request to real-estate101 API...")
+    console.log("📤 Sending request to real-estate101 API with retries...")
 
-    // ✅ CRITICAL: Set timeout to prevent hanging
-    const response = await axios.request({
-      method: "GET",
-      url: "https://real-estate101.p.rapidapi.com/api/search/byurl",
-      params: {
-        url: nyUrl,
-        page: "1",
+    // ✅ Fetch with retry logic
+    const response = await fetchWithRetry(
+      "https://real-estate101.p.rapidapi.com/api/search/byurl",
+      {
+        method: "GET",
+        params: {
+          url: nyUrl,
+          page: "1",
+        },
+        headers: {
+          "x-rapidapi-key": RAPIDAPI_KEY,
+          "x-rapidapi-host": "real-estate101.p.rapidapi.com",
+        },
       },
-      headers: {
-        "x-rapidapi-key": RAPIDAPI_KEY,
-        "x-rapidapi-host": "real-estate101.p.rapidapi.com",
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-      },
-      timeout: 20000, // ✅ 20 second timeout
-    })
+      3 // Max 3 retries
+    )
 
     console.log("✅ Response received\n")
 
@@ -187,24 +235,23 @@ export async function fetchFromPublicSource(): Promise<RawPublicListing[]> {
 
     return listings
   } catch (error: any) {
-    console.error(`\n❌ API Error\n`)
+    console.error(`\n❌ API Error after all retries\n`)
 
     // Timeout error
     if (error.message.includes("timeout") || error.code === "ECONNABORTED") {
       console.error("⚠️  Request Timeout")
-      console.error("   The API server took too long to respond (>20 seconds)")
-      console.error("   Suggestions:")
-      console.error("   • Check if API server is running")
-      console.error("   • Verify RAPIDAPI_KEY is correct")
-      console.error("   • Try increasing timeout if needed\n")
+      console.error("   The API server took too long to respond")
+      console.error("   This might indicate:")
+      console.error("   • API server is overloaded")
+      console.error("   • Network connectivity issue on Vercel")
+      console.error("   • API endpoint is temporarily down\n")
       return []
     }
 
     // API Key error
     if (error.response?.status === 401 || error.response?.status === 403) {
       console.error("⚠️  Authentication Error")
-      console.error("   • Check your RAPIDAPI_KEY is correct")
-      console.error("   • Make sure API key is set in Vercel Dashboard")
+      console.error("   • Check your RAPIDAPI_KEY is correct in Vercel")
       console.error("   • Verify you're subscribed to real-estate101 API\n")
       return []
     }
@@ -220,7 +267,7 @@ export async function fetchFromPublicSource(): Promise<RawPublicListing[]> {
     // Network error
     if (error.code === "ENOTFOUND" || error.code === "ECONNREFUSED") {
       console.error("⚠️  Network Error")
-      console.error("   • Check your internet connection")
+      console.error("   • Check Vercel network connectivity")
       console.error("   • Verify API endpoint is correct\n")
       return []
     }
