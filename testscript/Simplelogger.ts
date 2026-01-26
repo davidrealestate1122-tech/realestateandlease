@@ -14,7 +14,7 @@ class SimpleLogger {
 
   constructor(logFileName: string = "log.txt") {
     // Create logs directory if it doesn't exist
-    const logsDir = "./temp"
+    const logsDir = "./logs"
     if (!fs.existsSync(logsDir)) {
       fs.mkdirSync(logsDir, { recursive: true })
     }

@@ -132,13 +132,7 @@
   {
     "subjectId": "2106743595",
     "subjectAddress": "357 Varick St APT 123B",
-    "comparables": [
-      {
-        "compId": "459910535",
-        "included": true,
-        "reasons": []
-      }
-    ]
+    "comparables": []
   },
   {
     "subjectId": "37873799",

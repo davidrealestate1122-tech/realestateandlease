@@ -1,5 +1,5 @@
 {
-  "pipelineRunAt": "2026-01-26T22:52:23.492Z",
+  "pipelineRunAt": "2026-01-26T23:28:45.448Z",
   "steps": {
     "step1_ingestion": {
       "name": "Real Public-Source Ingestion (Non-Simulated)",

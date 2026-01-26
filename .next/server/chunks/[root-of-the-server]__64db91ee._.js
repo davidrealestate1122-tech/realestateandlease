@@ -130,7 +130,7 @@ module.exports=[67399,e=>e.a(async(t,i)=>{try{let t=await e.y("node-cron");e.n(t
       </div>
     </body>
     </html>
-  `)}),console.log(`✅ Daily email sent (${e.length} deals)`)}let u=class{logFilePath;originalLog;originalWarn;originalError;constructor(e="log.txt"){const t="./temp";r.existsSync(t)||r.mkdirSync(t,{recursive:!0}),this.logFilePath=p.join(t,e);const i="=".repeat(80),a=new Date().toISOString(),o=`
+  `)}),console.log(`✅ Daily email sent (${e.length} deals)`)}let u=class{logFilePath;originalLog;originalWarn;originalError;constructor(e="log.txt"){const t="./logs";r.existsSync(t)||r.mkdirSync(t,{recursive:!0}),this.logFilePath=p.join(t,e);const i="=".repeat(80),a=new Date().toISOString(),o=`
 ${i}
 Pipeline Log Started: ${a}
 ${i}
