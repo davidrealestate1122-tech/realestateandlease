@@ -5,54 +5,53 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
-        "Located on a busy road - potential noise/traffic issues",
-        "No garage - limits parking/storage options"
+        "No garage - limits parking/storage options",
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.243Z"
+    "evaluatedAt": "2026-01-26T22:52:22.558Z"
   },
   {
     "externalId": "39110506",
     "address": "84 Goodwin Dr",
     "underwriting": {
-      "status": "PASS",
-      "arv": {
-        "baseArv": 561250,
-        "finalArv": 550025,
-        "adjustmentSteps": [
-          {
-            "factor": "No garage - limits parking/storage options",
-            "percentApplied": "2.0%",
-            "arvBefore": 561250,
-            "arvAfter": 550025
-          }
-        ]
-      },
-      "costs": {
-        "purchasePrice": 449000,
-        "closingCosts": 8980,
-        "holdingCosts": 13470,
-        "rehabCost": 67200,
-        "totalCosts": 538650
-      },
-      "negativeFactors": [
+      "status": "FAIL",
+      "failureReasons": [
+        "Located on a busy road - potential noise/traffic issues",
         "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.253Z"
+    "evaluatedAt": "2026-01-26T22:52:22.568Z"
   },
   {
     "externalId": "38670957",
     "address": "198 W Northfield Rd",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Near commercial properties - possible nuisances",
-        "No garage - limits parking/storage options",
+      "status": "PASS",
+      "arv": {
+        "baseArv": 998750,
+        "finalArv": 978775,
+        "adjustmentSteps": [
+          {
+            "factor": "Lacks freeway access - may impact commute times",
+            "percentApplied": "2.0%",
+            "arvBefore": 998750,
+            "arvAfter": 978775
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 799000,
+        "closingCosts": 15980,
+        "holdingCosts": 23970,
+        "rehabCost": 95760,
+        "totalCosts": 934710
+      },
+      "negativeFactors": [
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.268Z"
+    "evaluatedAt": "2026-01-26T22:52:22.578Z"
   },
   {
     "externalId": "29817784",
@@ -75,57 +74,57 @@
         "purchasePrice": 789000,
         "closingCosts": 15780,
         "holdingCosts": 23670,
-        "rehabCost": 152390,
-        "totalCosts": 980840
+        "rehabCost": 131495,
+        "totalCosts": 959945
       },
       "negativeFactors": [
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.280Z"
+    "evaluatedAt": "2026-01-26T22:52:22.593Z"
   },
   {
     "externalId": "38917410",
     "address": "627 Ocean Ave",
     "underwriting": {
-      "status": "PASS",
-      "arv": {
-        "baseArv": 686250,
-        "finalArv": 672525,
-        "adjustmentSteps": [
-          {
-            "factor": "Lacks freeway access - may impact commute times",
-            "percentApplied": "2.0%",
-            "arvBefore": 686250,
-            "arvAfter": 672525
-          }
-        ]
-      },
-      "costs": {
-        "purchasePrice": 549000,
-        "closingCosts": 10980,
-        "holdingCosts": 16470,
-        "rehabCost": 131600,
-        "totalCosts": 708050
-      },
-      "negativeFactors": [
+      "status": "FAIL",
+      "failureReasons": [
+        "Near commercial properties - possible nuisances",
+        "No garage - limits parking/storage options",
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.295Z"
+    "evaluatedAt": "2026-01-26T22:52:22.606Z"
   },
   {
     "externalId": "38724914",
     "address": "252 Duane St",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Located on a busy road - potential noise/traffic issues",
-        "Near commercial properties - possible nuisances",
-        "No garage - limits parking/storage options"
+      "status": "PASS",
+      "arv": {
+        "baseArv": 406250,
+        "finalArv": 385937,
+        "adjustmentSteps": [
+          {
+            "factor": "Located on a busy road - potential noise/traffic issues",
+            "percentApplied": "5.0%",
+            "arvBefore": 406250,
+            "arvAfter": 385937
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 325000,
+        "closingCosts": 6500,
+        "holdingCosts": 9750,
+        "rehabCost": 100555,
+        "totalCosts": 441805
+      },
+      "negativeFactors": [
+        "Located on a busy road - potential noise/traffic issues"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.313Z"
+    "evaluatedAt": "2026-01-26T22:52:22.618Z"
   },
   {
     "externalId": "459930676",
@@ -137,20 +136,37 @@
         "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.328Z"
+    "evaluatedAt": "2026-01-26T22:52:22.633Z"
   },
   {
     "externalId": "31209374",
     "address": "218 Woodlawn Road",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Near commercial properties - possible nuisances",
-        "No garage - limits parking/storage options",
-        "Lacks freeway access - may impact commute times"
+      "status": "PASS",
+      "arv": {
+        "baseArv": 1124999,
+        "finalArv": 1068749,
+        "adjustmentSteps": [
+          {
+            "factor": "Located on a busy road - potential noise/traffic issues",
+            "percentApplied": "5.0%",
+            "arvBefore": 1124999,
+            "arvAfter": 1068749
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 899999,
+        "closingCosts": 18000,
+        "holdingCosts": 27000,
+        "rehabCost": 117635,
+        "totalCosts": 1062634
+      },
+      "negativeFactors": [
+        "Located on a busy road - potential noise/traffic issues"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.346Z"
+    "evaluatedAt": "2026-01-26T22:52:22.646Z"
   },
   {
     "externalId": "40073878",
@@ -158,11 +174,11 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
-        "Near commercial properties - possible nuisances",
+        "Located on a busy road - potential noise/traffic issues",
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.363Z"
+    "evaluatedAt": "2026-01-26T22:52:22.663Z"
   },
   {
     "externalId": "459817653",
@@ -170,13 +186,11 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
-        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
-        "No garage - limits parking/storage options",
-        "Lacks freeway access - may impact commute times"
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.379Z"
+    "evaluatedAt": "2026-01-26T22:52:22.675Z"
   },
   {
     "externalId": "459910535",
@@ -189,11 +203,41 @@
         "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.396Z"
+    "evaluatedAt": "2026-01-26T22:52:22.687Z"
   },
   {
     "externalId": "39439026",
     "address": "4 Delbarton Dr",
+    "underwriting": {
+      "status": "PASS",
+      "arv": {
+        "baseArv": 1498750,
+        "finalArv": 1423812,
+        "adjustmentSteps": [
+          {
+            "factor": "Located on a busy road - potential noise/traffic issues",
+            "percentApplied": "5.0%",
+            "arvBefore": 1498750,
+            "arvAfter": 1423812
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 1199000,
+        "closingCosts": 23980,
+        "holdingCosts": 35970,
+        "rehabCost": 147070,
+        "totalCosts": 1406020
+      },
+      "negativeFactors": [
+        "Located on a busy road - potential noise/traffic issues"
+      ]
+    },
+    "evaluatedAt": "2026-01-26T22:52:22.709Z"
+  },
+  {
+    "externalId": "31291263",
+    "address": "169 N 6th Street",
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
@@ -203,67 +247,19 @@
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.412Z"
-  },
-  {
-    "externalId": "31291263",
-    "address": "169 N 6th Street",
-    "underwriting": {
-      "status": "PASS",
-      "arv": {
-        "baseArv": 1225000,
-        "finalArv": 1200500,
-        "adjustmentSteps": [
-          {
-            "factor": "Lacks freeway access - may impact commute times",
-            "percentApplied": "2.0%",
-            "arvBefore": 1225000,
-            "arvAfter": 1200500
-          }
-        ]
-      },
-      "costs": {
-        "purchasePrice": 980000,
-        "closingCosts": 19600,
-        "holdingCosts": 29400,
-        "rehabCost": 163940,
-        "totalCosts": 1192940
-      },
-      "negativeFactors": [
-        "Lacks freeway access - may impact commute times"
-      ]
-    },
-    "evaluatedAt": "2026-01-26T19:49:56.427Z"
+    "evaluatedAt": "2026-01-26T22:52:22.730Z"
   },
   {
     "externalId": "39798854",
     "address": "47 Chicopee Dr",
     "underwriting": {
-      "status": "PASS",
-      "arv": {
-        "baseArv": 1360000,
-        "finalArv": 1292000,
-        "adjustmentSteps": [
-          {
-            "factor": "Located on a busy road - potential noise/traffic issues",
-            "percentApplied": "5.0%",
-            "arvBefore": 1360000,
-            "arvAfter": 1292000
-          }
-        ]
-      },
-      "costs": {
-        "purchasePrice": 1088000,
-        "closingCosts": 21760,
-        "holdingCosts": 32640,
-        "rehabCost": 112840,
-        "totalCosts": 1255240
-      },
-      "negativeFactors": [
-        "Located on a busy road - potential noise/traffic issues"
+      "status": "FAIL",
+      "failureReasons": [
+        "Located on a busy road - potential noise/traffic issues",
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.449Z"
+    "evaluatedAt": "2026-01-26T22:52:22.749Z"
   },
   {
     "externalId": "33081849",
@@ -279,12 +275,12 @@
         "purchasePrice": 1965000,
         "closingCosts": 39300,
         "holdingCosts": 58950,
-        "rehabCost": 68740,
-        "totalCosts": 2131990
+        "rehabCost": 138530,
+        "totalCosts": 2201780
       },
       "negativeFactors": []
     },
-    "evaluatedAt": "2026-01-26T19:49:56.471Z"
+    "evaluatedAt": "2026-01-26T22:52:22.767Z"
   },
   {
     "externalId": "459873095",
@@ -292,13 +288,12 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
-        "Located on a busy road - potential noise/traffic issues",
         "Multifamily properties nearby - may affect desirability",
         "No garage - limits parking/storage options",
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.494Z"
+    "evaluatedAt": "2026-01-26T22:52:22.786Z"
   },
   {
     "externalId": "39984393",
@@ -314,12 +309,12 @@
         "purchasePrice": 725000,
         "closingCosts": 14500,
         "holdingCosts": 21750,
-        "rehabCost": 161070,
-        "totalCosts": 922320
+        "rehabCost": 146685,
+        "totalCosts": 907935
       },
       "negativeFactors": []
     },
-    "evaluatedAt": "2026-01-26T19:49:56.513Z"
+    "evaluatedAt": "2026-01-26T22:52:22.802Z"
   },
   {
     "externalId": "39877059",
@@ -342,14 +337,14 @@
         "purchasePrice": 599000,
         "closingCosts": 11980,
         "holdingCosts": 17970,
-        "rehabCost": 81655,
-        "totalCosts": 710605
+        "rehabCost": 112910,
+        "totalCosts": 741860
       },
       "negativeFactors": [
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.539Z"
+    "evaluatedAt": "2026-01-26T22:52:22.828Z"
   },
   {
     "externalId": "31311301",
@@ -357,11 +352,11 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
-        "No garage - limits parking/storage options",
-        "Lacks freeway access - may impact commute times"
+        "Located on a busy road - potential noise/traffic issues",
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.564Z"
+    "evaluatedAt": "2026-01-26T22:52:22.848Z"
   },
   {
     "externalId": "30588012",
@@ -370,10 +365,11 @@
       "status": "FAIL",
       "failureReasons": [
         "Multifamily properties nearby - may affect desirability",
-        "No garage - limits parking/storage options"
+        "No garage - limits parking/storage options",
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.584Z"
+    "evaluatedAt": "2026-01-26T22:52:22.867Z"
   },
   {
     "externalId": "2056278762",
@@ -381,12 +377,13 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
+        "Located on a busy road - potential noise/traffic issues",
+        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
-        "No garage - limits parking/storage options",
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.607Z"
+    "evaluatedAt": "2026-01-26T22:52:22.887Z"
   },
   {
     "externalId": "59550869",
@@ -398,7 +395,7 @@
         "finalArv": 2811375,
         "adjustmentSteps": [
           {
-            "factor": "No garage - limits parking/storage options",
+            "factor": "Lacks freeway access - may impact commute times",
             "percentApplied": "2.0%",
             "arvBefore": 2868750,
             "arvAfter": 2811375
@@ -409,47 +406,47 @@
         "purchasePrice": 2295000,
         "closingCosts": 45900,
         "holdingCosts": 68850,
-        "rehabCost": 123970,
-        "totalCosts": 2533720
+        "rehabCost": 85330,
+        "totalCosts": 2495080
       },
       "negativeFactors": [
-        "No garage - limits parking/storage options"
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.628Z"
+    "evaluatedAt": "2026-01-26T22:52:22.909Z"
   },
   {
     "externalId": "39050362",
     "address": "14 Fountain St",
     "underwriting": {
-      "status": "PASS",
-      "arv": {
-        "baseArv": 624999,
-        "finalArv": 624999,
-        "adjustmentSteps": []
-      },
-      "costs": {
-        "purchasePrice": 499999,
-        "closingCosts": 10000,
-        "holdingCosts": 15000,
-        "rehabCost": 90790,
-        "totalCosts": 615789
-      },
-      "negativeFactors": []
+      "status": "FAIL",
+      "failureReasons": [
+        "Located on a busy road - potential noise/traffic issues",
+        "Lacks freeway access - may impact commute times"
+      ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.655Z"
+    "evaluatedAt": "2026-01-26T22:52:22.934Z"
   },
   {
     "externalId": "53381704",
     "address": "2434 Martin Avenue",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Near commercial properties - possible nuisances",
-        "Lacks freeway access - may impact commute times"
-      ]
+      "status": "PASS",
+      "arv": {
+        "baseArv": 249875,
+        "finalArv": 249875,
+        "adjustmentSteps": []
+      },
+      "costs": {
+        "purchasePrice": 199900,
+        "closingCosts": 3998,
+        "holdingCosts": 5997,
+        "rehabCost": 140630,
+        "totalCosts": 350525
+      },
+      "negativeFactors": []
     },
-    "evaluatedAt": "2026-01-26T19:49:56.679Z"
+    "evaluatedAt": "2026-01-26T22:52:22.957Z"
   },
   {
     "externalId": "31072874",
@@ -458,19 +455,28 @@
       "status": "PASS",
       "arv": {
         "baseArv": 1562500,
-        "finalArv": 1562500,
-        "adjustmentSteps": []
+        "finalArv": 1531250,
+        "adjustmentSteps": [
+          {
+            "factor": "No garage - limits parking/storage options",
+            "percentApplied": "2.0%",
+            "arvBefore": 1562500,
+            "arvAfter": 1531250
+          }
+        ]
       },
       "costs": {
         "purchasePrice": 1250000,
         "closingCosts": 25000,
         "holdingCosts": 37500,
-        "rehabCost": 164465,
-        "totalCosts": 1476965
+        "rehabCost": 95900,
+        "totalCosts": 1408400
       },
-      "negativeFactors": []
+      "negativeFactors": [
+        "No garage - limits parking/storage options"
+      ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.706Z"
+    "evaluatedAt": "2026-01-26T22:52:22.993Z"
   },
   {
     "externalId": "449319167",
@@ -479,11 +485,12 @@
       "status": "FAIL",
       "failureReasons": [
         "High DOM (120+ days) - stale listing",
+        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
         "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.736Z"
+    "evaluatedAt": "2026-01-26T22:52:23.025Z"
   },
   {
     "externalId": "2106743595",
@@ -491,24 +498,43 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
+        "Located on a busy road - potential noise/traffic issues",
+        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
         "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.763Z"
+    "evaluatedAt": "2026-01-26T22:52:23.052Z"
   },
   {
     "externalId": "37873799",
     "address": "94 W Madison Ave",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Located on a busy road - potential noise/traffic issues",
-        "Near commercial properties - possible nuisances",
-        "No garage - limits parking/storage options"
+      "status": "PASS",
+      "arv": {
+        "baseArv": 837499,
+        "finalArv": 820749,
+        "adjustmentSteps": [
+          {
+            "factor": "Lacks freeway access - may impact commute times",
+            "percentApplied": "2.0%",
+            "arvBefore": 837499,
+            "arvAfter": 820749
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 669999,
+        "closingCosts": 13400,
+        "holdingCosts": 20100,
+        "rehabCost": 95095,
+        "totalCosts": 798594
+      },
+      "negativeFactors": [
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.794Z"
+    "evaluatedAt": "2026-01-26T22:52:23.079Z"
   },
   {
     "externalId": "457665465",
@@ -516,11 +542,12 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
+        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
         "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.830Z"
+    "evaluatedAt": "2026-01-26T22:52:23.107Z"
   },
   {
     "externalId": "30696332",
@@ -529,10 +556,10 @@
       "status": "FAIL",
       "failureReasons": [
         "High DOM (120+ days) - stale listing",
-        "Near commercial properties - possible nuisances"
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.868Z"
+    "evaluatedAt": "2026-01-26T22:52:23.132Z"
   },
   {
     "externalId": "31366031",
@@ -541,41 +568,49 @@
       "status": "PASS",
       "arv": {
         "baseArv": 868750,
-        "finalArv": 851375,
-        "adjustmentSteps": [
-          {
-            "factor": "Lacks freeway access - may impact commute times",
-            "percentApplied": "2.0%",
-            "arvBefore": 868750,
-            "arvAfter": 851375
-          }
-        ]
+        "finalArv": 868750,
+        "adjustmentSteps": []
       },
       "costs": {
         "purchasePrice": 695000,
         "closingCosts": 13900,
         "holdingCosts": 20850,
-        "rehabCost": 125895,
-        "totalCosts": 855645
+        "rehabCost": 63595,
+        "totalCosts": 793345
       },
-      "negativeFactors": [
-        "Lacks freeway access - may impact commute times"
-      ]
+      "negativeFactors": []
     },
-    "evaluatedAt": "2026-01-26T19:49:56.899Z"
+    "evaluatedAt": "2026-01-26T22:52:23.160Z"
   },
   {
     "externalId": "31138483",
     "address": "53 Beaumont Drive",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Located on a busy road - potential noise/traffic issues",
-        "Near commercial properties - possible nuisances",
+      "status": "PASS",
+      "arv": {
+        "baseArv": 998750,
+        "finalArv": 978775,
+        "adjustmentSteps": [
+          {
+            "factor": "Lacks freeway access - may impact commute times",
+            "percentApplied": "2.0%",
+            "arvBefore": 998750,
+            "arvAfter": 978775
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 799000,
+        "closingCosts": 15980,
+        "holdingCosts": 23970,
+        "rehabCost": 64715,
+        "totalCosts": 903665
+      },
+      "negativeFactors": [
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.933Z"
+    "evaluatedAt": "2026-01-26T22:52:23.189Z"
   },
   {
     "externalId": "2078013134",
@@ -583,11 +618,14 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
+        "Located on a busy road - potential noise/traffic issues",
+        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
-        "No garage - limits parking/storage options"
+        "No garage - limits parking/storage options",
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:56.966Z"
+    "evaluatedAt": "2026-01-26T22:52:23.219Z"
   },
   {
     "externalId": "38883924",
@@ -597,11 +635,10 @@
       "failureReasons": [
         "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
-        "No garage - limits parking/storage options",
-        "Lacks freeway access - may impact commute times"
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.001Z"
+    "evaluatedAt": "2026-01-26T22:52:23.249Z"
   },
   {
     "externalId": "449673011",
@@ -610,10 +647,10 @@
       "status": "FAIL",
       "failureReasons": [
         "Near commercial properties - possible nuisances",
-        "Lacks freeway access - may impact commute times"
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.034Z"
+    "evaluatedAt": "2026-01-26T22:52:23.282Z"
   },
   {
     "externalId": "459524538",
@@ -622,10 +659,11 @@
       "status": "FAIL",
       "failureReasons": [
         "Located on a busy road - potential noise/traffic issues",
+        "No garage - limits parking/storage options",
         "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.071Z"
+    "evaluatedAt": "2026-01-26T22:52:23.314Z"
   },
   {
     "externalId": "31322609",
@@ -634,10 +672,10 @@
       "status": "FAIL",
       "failureReasons": [
         "Located on a busy road - potential noise/traffic issues",
-        "No garage - limits parking/storage options"
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.108Z"
+    "evaluatedAt": "2026-01-26T22:52:23.346Z"
   },
   {
     "externalId": "32373708",
@@ -646,28 +684,19 @@
       "status": "PASS",
       "arv": {
         "baseArv": 906250,
-        "finalArv": 860937,
-        "adjustmentSteps": [
-          {
-            "factor": "Located on a busy road - potential noise/traffic issues",
-            "percentApplied": "5.0%",
-            "arvBefore": 906250,
-            "arvAfter": 860937
-          }
-        ]
+        "finalArv": 906250,
+        "adjustmentSteps": []
       },
       "costs": {
         "purchasePrice": 725000,
         "closingCosts": 14500,
         "holdingCosts": 21750,
-        "rehabCost": 72275,
-        "totalCosts": 833525
+        "rehabCost": 108465,
+        "totalCosts": 869715
       },
-      "negativeFactors": [
-        "Located on a busy road - potential noise/traffic issues"
-      ]
+      "negativeFactors": []
     },
-    "evaluatedAt": "2026-01-26T19:49:57.142Z"
+    "evaluatedAt": "2026-01-26T22:52:23.377Z"
   },
   {
     "externalId": "458182526",
@@ -676,11 +705,13 @@
       "status": "FAIL",
       "failureReasons": [
         "Located on a busy road - potential noise/traffic issues",
+        "Near commercial properties - possible nuisances",
         "Multifamily properties nearby - may affect desirability",
-        "No garage - limits parking/storage options"
+        "No garage - limits parking/storage options",
+        "Lacks freeway access - may impact commute times"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.184Z"
+    "evaluatedAt": "2026-01-26T22:52:23.410Z"
   },
   {
     "externalId": "31144250",
@@ -688,22 +719,40 @@
     "underwriting": {
       "status": "FAIL",
       "failureReasons": [
-        "No garage - limits parking/storage options",
-        "Lacks freeway access - may impact commute times"
+        "Located on a busy road - potential noise/traffic issues",
+        "No garage - limits parking/storage options"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.225Z"
+    "evaluatedAt": "2026-01-26T22:52:23.439Z"
   },
   {
     "externalId": "38667863",
     "address": "34 W Lawn Rd",
     "underwriting": {
-      "status": "FAIL",
-      "failureReasons": [
-        "Located on a busy road - potential noise/traffic issues",
-        "Near commercial properties - possible nuisances"
+      "status": "PASS",
+      "arv": {
+        "baseArv": 998750,
+        "finalArv": 948812,
+        "adjustmentSteps": [
+          {
+            "factor": "Located on a busy road - potential noise/traffic issues",
+            "percentApplied": "5.0%",
+            "arvBefore": 998750,
+            "arvAfter": 948812
+          }
+        ]
+      },
+      "costs": {
+        "purchasePrice": 799000,
+        "closingCosts": 15980,
+        "holdingCosts": 23970,
+        "rehabCost": 110740,
+        "totalCosts": 949690
+      },
+      "negativeFactors": [
+        "Located on a busy road - potential noise/traffic issues"
       ]
     },
-    "evaluatedAt": "2026-01-26T19:49:57.270Z"
+    "evaluatedAt": "2026-01-26T22:52:23.481Z"
   }
 ]

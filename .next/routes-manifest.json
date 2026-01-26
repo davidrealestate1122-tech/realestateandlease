@@ -107,6 +107,12 @@
       "namedRegex": "^/api/deals(?:/)?$"
     },
     {
+      "page": "/api/downloadlogs",
+      "regex": "^/api/downloadlogs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/downloadlogs(?:/)?$"
+    },
+    {
       "page": "/api/rules",
       "regex": "^/api/rules(?:/)?$",
       "routeKeys": {},
@@ -123,6 +129,12 @@
       "regex": "^/api/users(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/users(?:/)?$"
+    },
+    {
+      "page": "/daily-logs",
+      "regex": "^/daily\\-logs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/daily\\-logs(?:/)?$"
     },
     {
       "page": "/daily-summary",

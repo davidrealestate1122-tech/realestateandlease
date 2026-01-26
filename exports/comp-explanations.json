@@ -47,13 +47,7 @@
   {
     "subjectId": "459817653",
     "subjectAddress": "749 Saint Anns Avenue #50D",
-    "comparables": [
-      {
-        "compId": "459930676",
-        "included": true,
-        "reasons": []
-      }
-    ]
+    "comparables": []
   },
   {
     "subjectId": "459910535",
@@ -138,7 +132,13 @@
   {
     "subjectId": "2106743595",
     "subjectAddress": "357 Varick St APT 123B",
-    "comparables": []
+    "comparables": [
+      {
+        "compId": "459910535",
+        "included": true,
+        "reasons": []
+      }
+    ]
   },
   {
     "subjectId": "37873799",

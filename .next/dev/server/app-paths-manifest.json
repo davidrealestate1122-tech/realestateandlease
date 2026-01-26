@@ -1,3 +1,5 @@
 {
-  "/api/bootstrap/route": "app/api/bootstrap/route.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/downloadlogs/route": "app/api/downloadlogs/route.js",
+  "/daily-logs/page": "app/daily-logs/page.js"
 }
