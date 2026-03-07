@@ -6,6 +6,7 @@ import { selectComps } from "../lib/comps/selectComps"
 import { explainComp } from "../lib/comps/compExplainability"
 import { evaluateProperty } from "../lib/underwriting/evaluateProperty"
 import { detectNegativeFactors } from "../lib/underwriting/negativeRules"
+import { bootstrapExecution } from "../lib/execution/execution"
 import {
   exportEvaluations,
   saveNormalizedListings,
@@ -256,7 +257,14 @@ export async function run() {
 
           const marginPercent =
             ((arv.finalArv - costs.purchasePrice) / arv.finalArv) * 100
-
+  try {
+    console.log("    🔗 Bootstrapping Phase 2 Execution Workspace...")
+    await bootstrapExecution(evaluation)
+    console.log("    ✅ Phase 2 Workspace Created")
+  } catch (err: any) {
+    console.error("    ❌ Phase 2 Bootstrap Failed")
+    console.error(err.message)
+  }
           passEmailPayload.push({
             address: evaluation.address,
             purchasePrice: costs.purchasePrice,

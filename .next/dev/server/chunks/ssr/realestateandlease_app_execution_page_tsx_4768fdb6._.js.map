@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/personal_workspace/realestateandlease/app/execution/page.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport { useEffect, useState } from \"react\"\r\nimport Link from \"next/link\"\r\n\r\nexport default function ExecutionList() {\r\n  const [data, setData] = useState<any[]>([])\r\n\r\n  useEffect(() => {\r\n    fetch(\"/api/execution/properties\")\r\n      .then(res => res.json())\r\n      .then(setData)\r\n  }, [])\r\n\r\n  return (\r\n    <div>\r\n      <h1>Execution Workspace</h1>\r\n      {data.map(p => (\r\n        <div key={p._id}>\r\n          {p.address} —\r\n          <Link href={`/execution/${p._id}`}> Open</Link>\r\n        </div>\r\n      ))}\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKe,SAAS;IACtB,MAAM,CAAC,MAAM,QAAQ,GAAG,IAAA,uOAAQ,EAAQ,EAAE;IAE1C,IAAA,wOAAS,EAAC;QACR,MAAM,6BACH,IAAI,CAAC,CAAA,MAAO,IAAI,IAAI,IACpB,IAAI,CAAC;IACV,GAAG,EAAE;IAEL,qBACE,oQAAC;;0BACC,oQAAC;0BAAG;;;;;;YACH,KAAK,GAAG,CAAC,CAAA,kBACR,oQAAC;;wBACE,EAAE,OAAO;wBAAC;sCACX,oQAAC,6LAAI;4BAAC,MAAM,CAAC,WAAW,EAAE,EAAE,GAAG,EAAE;sCAAE;;;;;;;mBAF3B,EAAE,GAAG;;;;;;;;;;;AAOvB"}}]
+}

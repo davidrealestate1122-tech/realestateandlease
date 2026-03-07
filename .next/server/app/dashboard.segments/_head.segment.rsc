@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[21007,["/_next/static/chunks/eebc5f29baa79dce.js","/_next/static/chunks/2335c03e464b18ea.js"],"ViewportBoundary"]
-4:I[21007,["/_next/static/chunks/eebc5f29baa79dce.js","/_next/static/chunks/2335c03e464b18ea.js"],"MetadataBoundary"]
+2:I[21007,["/_next/static/chunks/eebc5f29baa79dce.js","/_next/static/chunks/521a5372d7897359.js"],"ViewportBoundary"]
+4:I[21007,["/_next/static/chunks/eebc5f29baa79dce.js","/_next/static/chunks/521a5372d7897359.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
-0:{"buildId":"mUQ16mU06WIG-FJQHTMQN","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"D33ub4s98D_J4YA5rYDun","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Real Estate Admin - Deal Underwriting"}],["$","meta","1",{"name":"description","content":"Internal admin panel for deal sourcing and underwriting"}]]

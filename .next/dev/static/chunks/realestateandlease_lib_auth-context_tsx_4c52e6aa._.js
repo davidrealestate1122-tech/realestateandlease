@@ -45,6 +45,9 @@ function AuthProvider({ children }) {
                 const error = await response.json();
                 throw new Error(error.message || "Login failed");
             }
+            localStorage.setItem("user", JSON.stringify({
+                email
+            })); // Store user email for later use
             const data = await response.json();
             // Store token (in localStorage or cookies)
             localStorage.setItem("token", data.token);

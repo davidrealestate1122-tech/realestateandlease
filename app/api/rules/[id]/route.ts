@@ -3,11 +3,12 @@ import Rule from "@/models/Rule"
 import {connectDB} from "@/lib/db"
 import { NextRequest } from "next/server"
 
-export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PATCH(req: NextRequest, context: { params: Promise<{ id: string }> }) {
   await connectDB()
   const { value } = await req.json()
 
-  const rule = await Rule.findById(params.id)
+  const { id } = await context.params;
+  const rule = await Rule.findById(id)
   if (!rule || rule.locked === false) {
     return NextResponse.json({ error: "Invalid rule" }, { status: 400 })
   }

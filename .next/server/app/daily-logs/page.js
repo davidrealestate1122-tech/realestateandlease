@@ -2,7 +2,7 @@ var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/daily-logs/
 R.c("server/chunks/ssr/[root-of-the-server]__175ff80b._.js")
 R.c("server/chunks/ssr/8a434_next_dist_d72b5d2e._.js")
 R.c("server/chunks/ssr/realestateandlease_4fa407fc._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__28333cd6._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d16be7b7._.js")
 R.c("server/chunks/ssr/8a434_next_dist_2cb4c2c8._.js")
 R.c("server/chunks/ssr/8a434_next_dist_b23ad670._.js")
 R.c("server/chunks/ssr/8a434_next_dist_client_components_builtin_global-error_110d4c64.js")

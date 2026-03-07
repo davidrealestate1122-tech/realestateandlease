@@ -21,12 +21,108 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/api/contractor-files/[fileId]",
+      "regex": "^/api/contractor\\-files/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPfileId": "nxtPfileId"
+      },
+      "namedRegex": "^/api/contractor\\-files/(?<nxtPfileId>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/api/deals/[id]",
       "regex": "^/api/deals/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/api/deals/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/contractors/[id]",
+      "regex": "^/api/execution/contractors/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/contractors/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/contractors/[id]/payment",
+      "regex": "^/api/execution/contractors/([^/]+?)/payment(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/contractors/(?<nxtPid>[^/]+?)/payment(?:/)?$"
+    },
+    {
+      "page": "/api/execution/contractors/[id]/scope",
+      "regex": "^/api/execution/contractors/([^/]+?)/scope(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/contractors/(?<nxtPid>[^/]+?)/scope(?:/)?$"
+    },
+    {
+      "page": "/api/execution/costs/item/[id]",
+      "regex": "^/api/execution/costs/item/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/costs/item/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/costs/workspace/[workspaceId]",
+      "regex": "^/api/execution/costs/workspace/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPworkspaceId": "nxtPworkspaceId"
+      },
+      "namedRegex": "^/api/execution/costs/workspace/(?<nxtPworkspaceId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/costs/workspace/[workspaceId]/history",
+      "regex": "^/api/execution/costs/workspace/([^/]+?)/history(?:/)?$",
+      "routeKeys": {
+        "nxtPworkspaceId": "nxtPworkspaceId"
+      },
+      "namedRegex": "^/api/execution/costs/workspace/(?<nxtPworkspaceId>[^/]+?)/history(?:/)?$"
+    },
+    {
+      "page": "/api/execution/inspections/[id]",
+      "regex": "^/api/execution/inspections/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/inspections/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/properties/[propertyId]",
+      "regex": "^/api/execution/properties/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpropertyId": "nxtPpropertyId"
+      },
+      "namedRegex": "^/api/execution/properties/(?<nxtPpropertyId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/tasks/[id]",
+      "regex": "^/api/execution/tasks/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/tasks/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/execution/timeline/[id]",
+      "regex": "^/api/execution/timeline/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/execution/timeline/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/files/[fileId]",
+      "regex": "^/api/files/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPfileId": "nxtPfileId"
+      },
+      "namedRegex": "^/api/files/(?<nxtPfileId>[^/]+?)(?:/)?$"
     },
     {
       "page": "/api/rules/[id]",
@@ -67,6 +163,14 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/deals/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/execution/[propertyId]",
+      "regex": "^/execution/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpropertyId": "nxtPpropertyId"
+      },
+      "namedRegex": "^/execution/(?<nxtPpropertyId>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -101,6 +205,18 @@
       "namedRegex": "^/api/bootstrap(?:/)?$"
     },
     {
+      "page": "/api/contractor-files/list",
+      "regex": "^/api/contractor\\-files/list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contractor\\-files/list(?:/)?$"
+    },
+    {
+      "page": "/api/contractor-files/upload",
+      "regex": "^/api/contractor\\-files/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contractor\\-files/upload(?:/)?$"
+    },
+    {
       "page": "/api/deals",
       "regex": "^/api/deals(?:/)?$",
       "routeKeys": {},
@@ -111,6 +227,66 @@
       "regex": "^/api/downloadlogs(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/downloadlogs(?:/)?$"
+    },
+    {
+      "page": "/api/execution/checklist",
+      "regex": "^/api/execution/checklist(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/checklist(?:/)?$"
+    },
+    {
+      "page": "/api/execution/contractors",
+      "regex": "^/api/execution/contractors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/contractors(?:/)?$"
+    },
+    {
+      "page": "/api/execution/costs",
+      "regex": "^/api/execution/costs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/costs(?:/)?$"
+    },
+    {
+      "page": "/api/execution/inspections",
+      "regex": "^/api/execution/inspections(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/inspections(?:/)?$"
+    },
+    {
+      "page": "/api/execution/properties",
+      "regex": "^/api/execution/properties(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/properties(?:/)?$"
+    },
+    {
+      "page": "/api/execution/stage",
+      "regex": "^/api/execution/stage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/stage(?:/)?$"
+    },
+    {
+      "page": "/api/execution/tasks",
+      "regex": "^/api/execution/tasks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/tasks(?:/)?$"
+    },
+    {
+      "page": "/api/execution/timeline",
+      "regex": "^/api/execution/timeline(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/execution/timeline(?:/)?$"
+    },
+    {
+      "page": "/api/files/list",
+      "regex": "^/api/files/list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/files/list(?:/)?$"
+    },
+    {
+      "page": "/api/files/upload",
+      "regex": "^/api/files/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/files/upload(?:/)?$"
     },
     {
       "page": "/api/rules",
@@ -159,6 +335,12 @@
       "regex": "^/deals/new(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/deals/new(?:/)?$"
+    },
+    {
+      "page": "/execution",
+      "regex": "^/execution(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/execution(?:/)?$"
     },
     {
       "page": "/login",

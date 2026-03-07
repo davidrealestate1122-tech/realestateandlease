@@ -67,6 +67,9 @@ const totalCosts = closingCosts + holdingCosts + rehabCost + purchasePrice
   return {
     externalId: listing.externalId,
     address: listing.address,
+    city: listing.city,
+    state: listing.state,
+    zip: listing.zip, 
     underwriting: {
       status: "PASS",
       arv: {
