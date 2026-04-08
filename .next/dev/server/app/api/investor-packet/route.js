@@ -1,0 +1,12 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/investor-packet/route.js")
+R.c("server/chunks/8a434_next_4b5f7570._.js")
+R.c("server/chunks/8a434_pdf-lib_es_core_b9f97b1a._.js")
+R.c("server/chunks/8a434_pdf-lib_es_api_870b8c4e._.js")
+R.c("server/chunks/8a434_pdf-lib_es_6bfe527a._.js")
+R.c("server/chunks/8a434_d98d5bf7._.js")
+R.c("server/chunks/8a434_@pdf-lib_standard-fonts_es_d0a0ad1c._.js")
+R.c("server/chunks/8a434_522c72dd._.js")
+R.c("server/chunks/[root-of-the-server]__3ef7889e._.js")
+R.c("server/chunks/76271__next-internal_server_app_api_investor-packet_route_actions_4aa65d41.js")
+R.m("[project]/realestateandlease/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/realestateandlease/app/api/investor-packet/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/realestateandlease/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/realestateandlease/app/api/investor-packet/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

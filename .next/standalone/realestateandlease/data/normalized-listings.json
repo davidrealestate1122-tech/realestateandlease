@@ -1,0 +1,30 @@
+{
+  "runAt": "2026-01-13T20:31:00.027Z",
+  "count": 2,
+  "listings": [
+    {
+      "externalId": 5001,
+      "address": "1643 Park Street",
+      "city": "Garland",
+      "state": "TX",
+      "zip": "75040",
+      "price": 401849,
+      "beds": 5,
+      "baths": 1,
+      "sqft": 2946,
+      "updatedAt": "2026-01-13T20:31:00.008Z"
+    },
+    {
+      "externalId": 5002,
+      "address": "7782 Elm Street",
+      "city": "Arlington",
+      "state": "TX",
+      "zip": "76010",
+      "price": 426027,
+      "beds": 2,
+      "baths": 3,
+      "sqft": 3582,
+      "updatedAt": "2026-01-13T20:31:00.008Z"
+    }
+  ]
+}

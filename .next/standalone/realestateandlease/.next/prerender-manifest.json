@@ -277,6 +277,31 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/profiles": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/profiles",
+      "dataRoute": "/profiles.rsc",
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/rules": {
       "experimentalBypassFor": [
         {
@@ -292,6 +317,56 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/rules",
       "dataRoute": "/rules.rsc",
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/templates/list": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/templates/list",
+      "dataRoute": "/templates/list.rsc",
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/templates": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/templates",
+      "dataRoute": "/templates.rsc",
       "prefetchDataRoute": null,
       "allowHeader": [
         "host",
@@ -331,8 +406,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "c4cf6c429eeff1c39200b50ec6ac8789",
-    "previewModeSigningKey": "b7ef5b765adeedd94f9d18764f3bf6abd25844459065fabf8ccc63c533eaf68a",
-    "previewModeEncryptionKey": "57f8bc01a29a723ebedb750c6a82998f39bdaec9390f81813709cef060b7c923"
+    "previewModeId": "37bb31b4711fdc4996c5c05137e306bc",
+    "previewModeSigningKey": "a749396a6a56f7ff03512a50b5f140e1f50ad56c314d0678b6fd2ac7193b82c9",
+    "previewModeEncryptionKey": "6eb4710b82a8df34c8d40b562dbd853ac1785aad26e7ddc3ddb8e63c35ea3e52"
   }
 }

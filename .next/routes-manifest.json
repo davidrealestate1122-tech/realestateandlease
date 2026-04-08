@@ -125,12 +125,36 @@
       "namedRegex": "^/api/files/(?<nxtPfileId>[^/]+?)(?:/)?$"
     },
     {
+      "page": "/api/profiles/[id]",
+      "regex": "^/api/profiles/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/profiles/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/api/rules/[id]",
       "regex": "^/api/rules/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/api/rules/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/templates/[id]/values",
+      "regex": "^/api/templates/([^/]+?)/values(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/templates/(?<nxtPid>[^/]+?)/values(?:/)?$"
+    },
+    {
+      "page": "/api/templates/[id]/variables",
+      "regex": "^/api/templates/([^/]+?)/variables(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/templates/(?<nxtPid>[^/]+?)/variables(?:/)?$"
     },
     {
       "page": "/api/users/[id]",
@@ -217,10 +241,34 @@
       "namedRegex": "^/api/contractor\\-files/upload(?:/)?$"
     },
     {
+      "page": "/api/deal-data",
+      "regex": "^/api/deal\\-data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/deal\\-data(?:/)?$"
+    },
+    {
       "page": "/api/deals",
       "regex": "^/api/deals(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/deals(?:/)?$"
+    },
+    {
+      "page": "/api/documents",
+      "regex": "^/api/documents(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/documents(?:/)?$"
+    },
+    {
+      "page": "/api/documents/convert-pdf",
+      "regex": "^/api/documents/convert\\-pdf(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/documents/convert\\-pdf(?:/)?$"
+    },
+    {
+      "page": "/api/documents/generate",
+      "regex": "^/api/documents/generate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/documents/generate(?:/)?$"
     },
     {
       "page": "/api/downloadlogs",
@@ -289,6 +337,24 @@
       "namedRegex": "^/api/files/upload(?:/)?$"
     },
     {
+      "page": "/api/investor-packet",
+      "regex": "^/api/investor\\-packet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/investor\\-packet(?:/)?$"
+    },
+    {
+      "page": "/api/investors",
+      "regex": "^/api/investors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/investors(?:/)?$"
+    },
+    {
+      "page": "/api/profiles",
+      "regex": "^/api/profiles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/profiles(?:/)?$"
+    },
+    {
       "page": "/api/rules",
       "regex": "^/api/rules(?:/)?$",
       "routeKeys": {},
@@ -299,6 +365,36 @@
       "regex": "^/api/rules/seed(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/rules/seed(?:/)?$"
+    },
+    {
+      "page": "/api/templates",
+      "regex": "^/api/templates(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/templates(?:/)?$"
+    },
+    {
+      "page": "/api/templates/get-values",
+      "regex": "^/api/templates/get\\-values(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/templates/get\\-values(?:/)?$"
+    },
+    {
+      "page": "/api/templates/map",
+      "regex": "^/api/templates/map(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/templates/map(?:/)?$"
+    },
+    {
+      "page": "/api/templates/save-values",
+      "regex": "^/api/templates/save\\-values(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/templates/save\\-values(?:/)?$"
+    },
+    {
+      "page": "/api/templates/upload",
+      "regex": "^/api/templates/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/templates/upload(?:/)?$"
     },
     {
       "page": "/api/users",
@@ -355,10 +451,28 @@
       "namedRegex": "^/profile(?:/)?$"
     },
     {
+      "page": "/profiles",
+      "regex": "^/profiles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profiles(?:/)?$"
+    },
+    {
       "page": "/rules",
       "regex": "^/rules(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/rules(?:/)?$"
+    },
+    {
+      "page": "/templates",
+      "regex": "^/templates(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/templates(?:/)?$"
+    },
+    {
+      "page": "/templates/list",
+      "regex": "^/templates/list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/templates/list(?:/)?$"
     },
     {
       "page": "/users",

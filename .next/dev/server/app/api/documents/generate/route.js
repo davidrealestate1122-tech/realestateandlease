@@ -1,0 +1,10 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/documents/generate/route.js")
+R.c("server/chunks/8a434_next_5d571249._.js")
+R.c("server/chunks/8a434_jszip_lib_3cfaf561._.js")
+R.c("server/chunks/125f5_pako_512ed996._.js")
+R.c("server/chunks/8a434_docx-templates_lib_15b36047._.js")
+R.c("server/chunks/8a434_f36bc032._.js")
+R.c("server/chunks/[root-of-the-server]__c1bf82f3._.js")
+R.c("server/chunks/76271__next-internal_server_app_api_documents_generate_route_actions_6ad73412.js")
+R.m("[project]/realestateandlease/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/realestateandlease/app/api/documents/generate/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/realestateandlease/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/realestateandlease/app/api/documents/generate/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

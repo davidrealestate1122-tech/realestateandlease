@@ -1,0 +1,3 @@
+{
+  "/api/documents/convert-pdf/route": "app/api/documents/convert-pdf/route.js"
+}
