@@ -1,5 +1,4 @@
 {
-  "/api/auth/login/route": "app/api/auth/login/route.js",
   "/api/documents/convert-pdf/route": "app/api/documents/convert-pdf/route.js",
   "/api/documents/generate/route": "app/api/documents/generate/route.js",
   "/api/documents/route": "app/api/documents/route.js",
@@ -10,9 +9,5 @@
   "/api/templates/[id]/variables/route": "app/api/templates/[id]/variables/route.js",
   "/api/templates/get-values/route": "app/api/templates/get-values/route.js",
   "/api/templates/route": "app/api/templates/route.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/login/page": "app/login/page.js",
-  "/page": "app/page.js",
-  "/profiles/page": "app/profiles/page.js",
   "/templates/page": "app/templates/page.js"
 }
